@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{714F9E2A-96A8-44CB-98A3-041234105296}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>三国杀</RootNamespace>
+    <AssemblyName>三国杀</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="QQSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QQSearch.Designer.cs">
+      <DependentUpon>QQSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index.Designer.cs">
+      <DependentUpon>index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QQMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QQMain.Designer.cs">
+      <DependentUpon>QQMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QQRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QQRegister.Designer.cs">
+      <DependentUpon>QQRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QQLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QQLogin.Designer.cs">
+      <DependentUpon>QQLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameMain.Designer.cs">
+      <DependentUpon>GameMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pvp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pvp.Designer.cs">
+      <DependentUpon>pvp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QQUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QQUserAdd.Designer.cs">
+      <DependentUpon>QQUserAdd.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QQSearch.resx">
+      <DependentUpon>QQSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index.resx">
+      <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QQMain.resx">
+      <DependentUpon>QQMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QQRegister.resx">
+      <DependentUpon>QQRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QQLogin.resx">
+      <DependentUpon>QQLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameMain.resx">
+      <DependentUpon>GameMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="pvp.resx">
+      <DependentUpon>pvp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QQUserAdd.resx">
+      <DependentUpon>QQUserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\583ce68ec4919.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\583ce4bf5f019.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\583cdebddd030.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonyes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wujiang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\无标题.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zxh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zxh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\无标题1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zhuce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginsss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qq1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qq11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qq12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\无标题2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
