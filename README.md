@@ -1,4 +1,4 @@
-# 三国杀游戏基于Winform,.NET框架
+# 三国杀游戏基于Winform
 
 #### 1.项目介绍
 
@@ -89,7 +89,7 @@ git clone git@gitee.com:xuezipeng/sanguosha.git
 >
 > 然后在Visual Studio中点击启动，运行项目 ! 
 
-![img](C:\Users\xzp\AppData\Roaming\Typora\typora-user-images\image-20200514092919504.png)
+![img](https://snkkkait.oss-cn-beijing.aliyuncs.com/picgo/20200514092913.png)
 
 ###### 8.2.1 修改数据库配置
 
@@ -113,6 +113,9 @@ git clone git@gitee.com:xuezipeng/sanguosha.git
 
 然后启动项目就可以跑了！！！ 开始你的第一个.NET游戏吧！！！
 
+> 直接在Visual Studio中点击启动按钮即可！！
 
+![image-20200514100107417](https://snkkkait.oss-cn-beijing.aliyuncs.com/picgo/20200514100058.png)
 
 如果有疑问可以直接在下面评论区提，有问必答！
+
