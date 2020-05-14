@@ -101,7 +101,7 @@ git clone git@gitee.com:xuezipeng/sanguosha.git
 
 拉下来代码以后，项目文件夹里边会有个sql文件夹，将里边的两个文件放置SQL Server的数据路径
 
-![img](C:\Users\xzp\AppData\Roaming\Typora\typora-user-images\image-20200514093416544.png)
+![img](https://snkkkait.oss-cn-beijing.aliyuncs.com/picgo/20200514093343.png)
 
 ![img](https://snkkkait.oss-cn-beijing.aliyuncs.com/picgo/20200514094749.png)
 
